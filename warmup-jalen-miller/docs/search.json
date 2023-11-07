@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Me",
+    "section": "",
+    "text": "Hello, I’m Jalen Miller! I’m a current student at Georgetown College graduating in just a few weeks!"
+  },
+  {
+    "objectID": "about.html#early-life",
+    "href": "about.html#early-life",
+    "title": "About Me",
+    "section": "Early Life",
+    "text": "Early Life\nI was born and raised in southern Ohio where I was able to fruitfully learn the ways of hard work and success. Through living in a small, tight community, I was able to make small town connections that would lead me to pursue a scholarship at Georgetown College while competeing for the baseball team. I have always had major interest in sports and electronics so playing baseball and being able to ocomplete a minor in computer science has been a dream come true."
+  },
+  {
+    "objectID": "about.html#studies",
+    "href": "about.html#studies",
+    "title": "About Me",
+    "section": "Studies",
+    "text": "Studies\nI started out my college career at Morehead State Unviersity where I studied Electronics Engineering. Along with working towards this degree, I competed for the baseball and football teams at MSU. Through some hard thinking and decision making, I found that I wanted to shift my studies to economics with a minor in computer science.\nAfter deciding this was my goal, I transferred to Georgetown College to complete these task. With this being my third year of studying at GC, I have had a phenomenal experience and learned a plethora. My intention is to graduate in December as I have a job lined up in Lexington, Kentucky pertaining to product management."
+  },
+  {
+    "objectID": "about.html#incorporating-computer-science",
+    "href": "about.html#incorporating-computer-science",
+    "title": "About Me",
+    "section": "Incorporating Computer Science",
+    "text": "Incorporating Computer Science\nAs I have a job lined up for after I graduate in December, I am currently co-opping with this company now. Through spending all summer and these past few months with this company, I have gotten to see how this type of work plays part in my role as a product manager. As I have dove deep into my role, I now understand the depths of computer science, data science, and data analytics in the safety and security world. My comapny specializes in the safe lock industry (SAL) where we produce the most secure safe lock in the world. To make this happen, there is tons of coding and programming to create these locks to perfection."
+  },
+  {
+    "objectID": "about.html#my-future",
+    "href": "about.html#my-future",
+    "title": "About Me",
+    "section": "My Future",
+    "text": "My Future\nLooking down the road, I have many goals I want to accomplish. My main goal however, is that I would love to complete a masters in computer science. This would assist me in the data analytics world immensly. This will be a decision for me in the coming years but I feel it will be important in learning everything I can and being the best data scientist possible."
+  },
+  {
+    "objectID": "articles/Groups/index.html",
+    "href": "articles/Groups/index.html",
+    "title": "Groups",
+    "section": "",
+    "text": "Here is a problem where I will create a new class called Groups!\nThe original problem as the student to create a class called “Group”. The question asked that this class contains different methods like add and delete. The ultimate goal here was to give the class a static from method that takes an iterable object as argument and creates a group that contains all the values produced by iterating over it.\nTo begin this problem I, created a new group that contained an empty array for storing some elements.\nclass Group {\n    constructor(){\n      this.element = [];\n    }\nNext, I incorporated the add method that would allow me to see if there was existence of a value using the ‘has’ method. Since I incorporated the add method, it was only correct to incorporate the delete mmethod next. The delete method removes a specified element from the group by filtering out the array elements that are not equal to the provided value. The final method I added to this function was the ‘has’ method. This last method checks whether the provided value exists in the ‘Group’ instance. It returns ‘true’ if the element is present and ‘false’ if it is not.\nadd(val){\n     if (!this.has(val)) {\n       this.element.push(val);\n     }\n   }\n   delete(val){\n     this.element = this.element.filter(v =&gt; v !== val);\n   }\n   has(val){\n     return this.element.includes(val);\n   }\nThe last chunck of this code refers to the ‘static from’ method. This is a method that creates a new ‘Group’ instance from an iterable collection. It takes a collection as an argument and adds each value from the collection to the newly created ‘Group’ instance using the ‘add’ method.\nstatic from(collection) {\n     let group = new Group;\n     for (let val of collection) {\n       group.add(val);\n     }\n     return group;\n   }\n }\nOverall, this class called ‘Group’ will provides a function to manage over a collection of different, unique values. Through different methods within the code, the construction of this allows the code to check and see if there is a presence of certain elements already in the code, of if they need to be added.\nA few examples of this could be shown here:\nlet group = Group.from([10, 20]);\n console.log(group.has(22));\n console.log(group.has(10));\nThe output of these would be as followed:\nfalse true"
+  },
+  {
+    "objectID": "home.html",
+    "href": "home.html",
+    "title": "Jalen Miller's Website Warmup",
+    "section": "",
+    "text": "This is a Quarto website for my computer science 324 class. Throughout this website there is a brief biography about me along with two homework problems that I am able to explain. These two problems along with articles about them can be found on the sidebar to the left. Enjoy!\nFeel free to reach out to me with any questions or concerns!\nMy email is: jmiller@georgetowncollege.edu"
+  },
+  {
+    "objectID": "articles/RevArr/index.html",
+    "href": "articles/RevArr/index.html",
+    "title": "Reversing An Array",
+    "section": "",
+    "text": "Here is a problem in which I will reverse an array using JavaScript!\nThe original problem ask the student to create a JavaScript code in which will reverse the given array to a new one where everything will be reversed backwards. Through working through this wuestion, I was able to create a nice solution that will do just this.\nTo begin this function, I called a function and named it “reverseArray”. Next, I created an empty array that would store the new components of the reversed array. After this, I created a for loop that would iterate through the array in reverse order. From here, I used an output function to push each element to an output array.\nfunction reverseArray(Letarray) {\n    let output = [];\n    for (let i = Letarray.length - 1; i &gt;= 0; i--) {\n      output.push(Letarray[i]);}\n    return output;}\nAfter doing this, I created a new array called, “reverseArrayInPlace”. This new function would overall just reverse each element in place so it wouldn’t have to create a whole new array again. The first for loop in this function finds itself iterating up to the midpoint of the array. Next, the ‘let old’ function stores the current element in a temporary variable. Finally, I was able to switch the current element with its corresponding element from the end and set the corresponding element from the end to the stored value. This finally allowed me to return the modified array when given one.\n  function reverseArrayInPlace(Letarray) {\n    for (let i = 0; i &lt; Math.floor(array.length / 2); i++) {\n      let old = Letarray[i];\n      Letarray[i] = Letarray[array.length - 1 - i];\n      Letarray[array.length - 1 - i] = old;}\n    return Letarray;}\nWhen giving this function something to work with, it is undoubtly going to reverse the given array and give the correct array back.\n  console.log(reverseArray([\"A\", \"B\", \"C\", \"D\", \"E\", \"F\"]));\nThe final output looks like this:\n[ ‘F’, ‘E’, ‘D’, ‘C’, ‘B’, ‘A’ ]"
+  },
+  {
+    "objectID": "articles/index.html",
+    "href": "articles/index.html",
+    "title": "Articles",
+    "section": "",
+    "text": "The articles on this site document are two different pieces of my work in which I show how I was able to reverse an array and create a class through using the JavaScript language. These articles can be found on the left side of the screen in the sidebar."
+  }
+]

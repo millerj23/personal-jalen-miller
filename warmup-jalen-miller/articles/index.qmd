@@ -1,0 +1,5 @@
+---
+title:  "Articles"
+---
+
+The articles on this site document are two different pieces of my work in which I show how I was able to reverse an array and create a class through using the JavaScript language. These articles can be found on the left side of the screen in the sidebar. 
