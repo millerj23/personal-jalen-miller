@@ -1,0 +1,46 @@
+---
+title:  "Reversing An Array"
+format:
+  html: 
+    grid:
+      sidebar-width: 250px
+      body-width: 450px
+      margin-width: 600px
+      gutter-width: 1.5rem
+    page-layout: full
+---
+
+Here is a problem in which I will reverse an array using JavaScript!
+
+The original problem ask the student to create a JavaScript code in which will reverse the given array to a new one where everything will be reversed backwards. Through working through this wuestion, I was able to create a nice solution that will do just this. 
+
+To begin this function, I called a function and named it "reverseArray". Next, I created an empty array that would store the new components of the reversed array. After this, I created a for loop that would iterate through the array in reverse order. From here, I used an output function to push each element to an output array. 
+
+```js
+function reverseArray(Letarray) {
+    let output = [];
+    for (let i = Letarray.length - 1; i >= 0; i--) {
+      output.push(Letarray[i]);}
+    return output;}
+```
+
+After doing this, I created a new array called, "reverseArrayInPlace". This new function would overall just reverse each element in place so it wouldn't have to create a whole new array again. The first for loop in this function finds itself iterating up to the midpoint of the array. Next, the 'let old' function stores the current element in a temporary variable. Finally, I was able to switch the current element with its corresponding element from the end and set the corresponding element from the end to the stored value. This finally allowed me to return the modified array when given one. 
+
+```js
+  function reverseArrayInPlace(Letarray) {
+    for (let i = 0; i < Math.floor(array.length / 2); i++) {
+      let old = Letarray[i];
+      Letarray[i] = Letarray[array.length - 1 - i];
+      Letarray[array.length - 1 - i] = old;}
+    return Letarray;}
+```
+
+When giving this function something to work with, it is undoubtly going to reverse the given array and give the correct array back. 
+
+```js 
+  console.log(reverseArray(["A", "B", "C", "D", "E", "F"]));
+```
+
+The final output looks like this: 
+
+[ 'F', 'E', 'D', 'C', 'B', 'A' ]
