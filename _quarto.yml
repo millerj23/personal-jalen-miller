@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Jalen Miller's Website Warmup"
-  site-path: "/warmup-jalen-miller/"
+  site-path: "/personal-jalen-miller/"
   navbar:
     left:
       - href: home.qmd
