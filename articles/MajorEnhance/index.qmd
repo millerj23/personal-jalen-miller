@@ -1,0 +1,57 @@
+---
+title:  "Major Enhancement"
+format:
+  html: 
+    grid:
+      sidebar-width: 250px
+      body-width: 450px
+      margin-width: 600px
+      gutter-width: 1.5rem
+    page-layout: full
+---
+
+# What's better than a minor enhancement? A major enhancement! 
+
+A simple thing that can enhance any website, any outfit, any writing... is some styling! 
+
+As I began to amplify my website, I wanted to add some style to draw viewers in even deeper. At the start of this creation, my website had an extremely basic look that had a laid back look to it. My first reaction to this styling was.. umm.. boring. 
+
+To reach the styling that I had hoped for, I had to do some intense research. Through searching the web and trying different things, I was able to achieve a slick, and clean look. Throughout this article, I hope to go step by step through my style.css file to explain my enhancements! 
+
+The first chunk of code I implemented to my style.css code can be seen as: 
+
+```js
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(67, 195, 227);
+  color: #fff;
+  font-size: 1.2em;
+}
+```
+
+To begin this styling, I started inside the header. I first centered the text with a 'text-align' argument and added some "padding" to give my headers a box around them to make them pop a little more. From there, I researched how to add in an "RGB Value" color and set it directly to the color I wanted. The RGB Value is "Red, Green, and Blue" and the owner puts in 3 values pertaining to each color, and you can receieve the desired color. The next line sets the color of the text in the box to white so it is visible. Next, I set the font size to what I wanted and I was happy with my headers. 
+
+In the next set of my styling, my code looks like this: 
+
+```js
+header a {
+  color: #fff;           
+  text-decoration: none; 
+  font-size: 20px;
+  margin: 0 15px;        
+}
+```
+
+This set of code allows me to customize my header. First, I tell which color I want my text to be. This text matches the color in the above section. Next, I took away the underlining from the links. From here, I created my font size to be 20px. Making my font size this size will come into play in the next set of styling. Lastly, I added in a margin to seperate the links. 
+
+In order to add a little more to my website, I wanted to add underlining to my text when hovered over along with the text size to get bigger too. This code looked like this: 
+
+```js
+header a:hover {
+  text-decoration: underline; 
+  text-size: 25px
+}
+```
+
+An enhancement to anything can always add value to it. In this scenario, my goal was to enhance my website for the pleasure of viewing. By adding in colors, moving headers, adding underlining, and more, I was able to achieve my goal of a slick and classy looking website. I believe this website fits the theme of who I am with color and styling. I like everything to look nice and clean whether that be my style in clothes, or my style for this website. Enhancements are key in everything! 

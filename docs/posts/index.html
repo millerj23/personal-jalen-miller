@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Jalen Miller’s Website Warmup - Articles</title>
+<title>Jalen Miller’s Website Warmup - Jalen’s posts, enjoy!</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
 <link href="../JMicon.webp" rel="icon">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -60,7 +62,38 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
 </head>
@@ -91,11 +124,11 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../articles/index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="../articles/index.html" rel="" target="">
  <span class="menu-text">Articles</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../posts/index.html" rel="" target="">
+    <a class="nav-link active" href="../posts/index.html" rel="" target="" aria-current="page">
  <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -109,14 +142,14 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Articles</li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Jalen’s posts, enjoy!</li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
     </div>
   </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
@@ -203,13 +236,13 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    </div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="2024">2024 <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Baseball">Baseball <span class="quarto-category-count">(2)</span></div><div class="category" data-category="Basketball">Basketball <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Cincinnati Reds">Cincinnati Reds <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Enhancement">Enhancement <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Georgetown College">Georgetown College <span class="quarto-category-count">(1)</span></div><div class="category" data-category="JavaScript">JavaScript <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Kentucky">Kentucky <span class="quarto-category-count">(1)</span></div><div class="category" data-category="New Year">New Year <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Substantive">Substantive <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-body" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Articles</h1>
+<h1 class="title">Jalen’s posts, enjoy!</h1>
 </div>
 
 
@@ -224,12 +257,213 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Check out my articles on the sidebar showing some work I have completed in my computer science course! Two of these articles show some homework problems in which I was able to solve a problem using JavaScript! The other article explains my process of styling this website, yes this website, with JavaScript!</p>
-<p>Check out these links and let me know what you think. Happy reading!</p>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Baseball,Georgetown College" data-listing-date-sort="1699851600000" data-listing-file-modified-sort="1699903514363" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../posts/GCBaseball/index.html"> <img src="../posts/GCBaseball/Dezarn.jpeg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../posts/GCBaseball/index.html">
+<h3 class="no-anchor listing-title">
+Georgetown College Baseball
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Baseball'); return false;">
+Baseball
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Georgetown College'); return false;">
+Georgetown College
+</div>
+</div>
+<a href="../posts/GCBaseball/index.html">
+<div class="listing-description">
+<p>An in-depth look at the Georgetown Tigers Baseball team in 2023/2024!</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/GCBaseball/index.html">
+<div class="listing-date">
+Nov 13, 2023
+</div>
+<div class="listing-author">
+Jalen Miller
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="New Year,2024" data-listing-date-sort="1699851600000" data-listing-file-modified-sort="1699904060213" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../posts/NewYear/index.html"> <img src="../posts/NewYear/NewYear.jpeg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../posts/NewYear/index.html">
+<h3 class="no-anchor listing-title">
+New Year, New Me!
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('New Year'); return false;">
+New Year
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('2024'); return false;">
+2024
+</div>
+</div>
+<a href="../posts/NewYear/index.html">
+<div class="listing-description">
+<p>There are many ways to help achieve new years resolutions and goals. Check out some of them here!</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/NewYear/index.html">
+<div class="listing-date">
+Nov 13, 2023
+</div>
+<div class="listing-author">
+Jalen Miller
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="2" data-categories="Baseball,Cincinnati Reds" data-listing-date-sort="1699851600000" data-listing-file-modified-sort="1699903349761" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5">
+<div class="thumbnail">
+<p><a href="../posts/JoeyVotto/index.html"> <img src="../posts/JoeyVotto/Votto.jpeg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../posts/JoeyVotto/index.html">
+<h3 class="no-anchor listing-title">
+Joey Votto’s next Destination
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Baseball'); return false;">
+Baseball
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Cincinnati Reds'); return false;">
+Cincinnati Reds
+</div>
+</div>
+<a href="../posts/JoeyVotto/index.html">
+<div class="listing-description">
+<p>Will Joey Votto end his career now, or will he continue to fight for a final championship? Find out here!</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/JoeyVotto/index.html">
+<div class="listing-date">
+Nov 13, 2023
+</div>
+<div class="listing-author">
+Jalen Miller
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="3" data-categories="Substantive,Kentucky,Basketball" data-listing-date-sort="1699851600000" data-listing-file-modified-sort="1701190582460" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/WildcatHoops/index.html"> <img src="../posts/WildcatHoops/UKmens.jpeg" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../posts/WildcatHoops/index.html">
+<h3 class="no-anchor listing-title">
+Wildcats Hoops
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('Substantive'); return false;">
+Substantive
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Kentucky'); return false;">
+Kentucky
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Basketball'); return false;">
+Basketball
+</div>
+</div>
+<a href="../posts/WildcatHoops/index.html">
+<div class="listing-description">
+<p>A closer look into the Kentucky Wildcats mens basketball team!</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/WildcatHoops/index.html">
+<div class="listing-date">
+Nov 13, 2023
+</div>
+<div class="listing-author">
+Jalen Miller
+</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="4" data-categories="JavaScript,Enhancement,Substantive" data-listing-date-sort="1699851600000" data-listing-file-modified-sort="1699903000645" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2">
+<div class="thumbnail">
+<p><a href="../posts/Enhancements/index.html"> <img src="../posts/Enhancements/Enhance.png" class="thumbnail-image"> </a></p>
+</div>
+<div class="body">
+<a href="../posts/Enhancements/index.html">
+<h3 class="no-anchor listing-title">
+Minor Enhancements!
+</h3>
+<div class="listing-subtitle">
+
+</div>
+</a>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('JavaScript'); return false;">
+JavaScript
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Enhancement'); return false;">
+Enhancement
+</div>
+<div class="listing-category" onclick="window.quartoListingCategory('Substantive'); return false;">
+Substantive
+</div>
+</div>
+<a href="../posts/Enhancements/index.html">
+<div class="listing-description">
+<p>A small change in style and appearance can create euphoric feelings within code!</p>
+</div>
+</a>
+</div>
+<div class="metadata">
+<a href="../posts/Enhancements/index.html">
+<div class="listing-date">
+Nov 13, 2023
+</div>
+<div class="listing-author">
+Jalen Miller
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

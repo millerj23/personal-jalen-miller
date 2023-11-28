@@ -1,1 +1,26 @@
-/* css styles */
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(67, 195, 227); 
+  color: #fff;           
+  font-size: 1.2em;      
+}
+
+header a {
+  color: #fff;     
+  text-decoration: none; 
+  font-size: 20px;
+  margin: 0 15px;        
+}
+
+header a:hover {
+  text-decoration: underline;
+  font-size: 25px;
+}
+
+
+
+
+
+

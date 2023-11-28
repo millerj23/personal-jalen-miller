@@ -18,7 +18,7 @@ img
 
 <img src="/images/jm.jpeg" class="center" style="border-radius: 50%;">
 
-Hello, I'm Jalen Miller!  I'm a current student at Georgetown College graduating in just a few weeks!
+Hello, I'm Jalen Miller!  I'm a current student at Georgetown College graduating on November 30th!
 
 
 ## Early Life

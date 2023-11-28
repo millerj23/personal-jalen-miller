@@ -5,6 +5,7 @@ project:
 website:
   title: "Jalen Miller's Website Warmup"
   site-path: "/personal-jalen-miller/"
+  favicon: JMicon.webp
   navbar:
     left:
       - href: home.qmd
@@ -12,7 +13,10 @@ website:
       - href: about.qmd
         text: About 
       - href: articles/index.qmd
-        text: Artcles
+        text: Articles
+      - href: posts/index.qmd
+        text: Blog
+    
 
   sidebar:
     - id: articles
@@ -22,15 +26,31 @@ website:
       logo: "images/articleee.jpeg"
       collapse-level: 2
       contents: 
+      - section: "Articles"
+        contents:
         - text: "Reversing an Array"
           href:  articles/RevArr/index.qmd
         - text: "Groups"
           href:  articles/Groups/index.qmd
+        - text: "Major Enhancement"
+          href:  articles/MajorEnhance/index.qmd
+      - section: "Blogs"
+        contents: 
+        - text: "Enhancements"
+          href: posts/Enhancements/index.qmd
+        - text: "Joey Votto"
+          href: posts/JoeyVotto/index.qmd
+        - text: "GC Baseball"
+          href: posts/GCBaseball/index.qmd
+        - text: "New Year"
+          href: posts/NewYear/index.qmd
+        - text: "Post 2"
+          href: posts/WildcatHoops/index.qmd
 
 
 format:
   html:
-    theme: dark
+    theme: light
     css: styles.css
     toc: true
 

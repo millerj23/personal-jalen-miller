@@ -2,4 +2,6 @@
 title:  "Articles"
 ---
 
-The articles on this site document are two different pieces of my work in which I show how I was able to reverse an array and create a class through using the JavaScript language. These articles can be found on the left side of the screen in the sidebar. 
+Check out my articles on the sidebar showing some work I have completed in my computer science course! Two of these articles show some homework problems in which I was able to solve a problem using JavaScript! The other article explains my process of styling this website, yes this website, with JavaScript!
+
+Check out these links and let me know what you think. Happy reading! 

@@ -1,0 +1,22 @@
+---
+title: "Minor Enhancements!"
+description: "A small change in style and appearance can create euphoric feelings within code! "
+author:
+  - name: Jalen Miller 
+    url: {}
+date: "2023-11-13"
+categories: ["JavaScript", "Enhancement", "Substantive"]
+image: Enhance.png
+---
+
+# Introduction 
+
+Do you remember the time you first fixed your hair? How about the first time you put on those new school shoes? If you're like most people, you recieved a feeling of euphoria and seretonin take over your body! There was nothing like that first compliment as soon as you walked into your first day of sixth grade. The simple fix of your hair, or lacing up the new sneakers seemed like such a minor enhancement, but it made a world of change!
+
+# Enchancements
+
+Whether something or someone creates a minor enhancmenent, or a major enhancement, there is still some sort of improvement to the previous situation. Just like the fresh sixth grader wants to make a fashion statement on day one, programmers and website builders like to do the same! Through creating my first website using quarto for computer science 324, I found myself returning to that same feeling. 
+
+# What and How?
+
+So as I worked through building my website, I wanted the visitor to see some visuals. Who doesn't like associating pictures and themes with words?! To do this, I added in some photos on my left side bar to distinuish between my articles and my blog posts. Through researching and trial and error, I was able to incorporate some visuals into my code. After splitting my sidebar into sections pertaining to the two, I was able to add in a logo argument to which I attatched a photo I imported into my VS Code application.
